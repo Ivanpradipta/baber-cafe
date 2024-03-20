@@ -9,7 +9,7 @@ export default function LandingPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/menus");
+        const response = await axios.get("https://api.gudang-morina.my.id/api/menus");
         if (Array.isArray(response.data.Menus)) {
           setDataList(response.data.Menus);
         } else {
