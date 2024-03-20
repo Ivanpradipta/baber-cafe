@@ -114,12 +114,25 @@ export default function LandingPage() {
 
           <a
             className="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-800 dark:hover:bg-opacity-60"
+
+        <div
+          className=" py-24 px-6 text-center dark:bg-neutral-900 h-[900px]"
+          style={{ backgroundImage: `url(${bg})` }}
+        >
+          <h1 className="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+            Home For Everyone <br />
+            <span className="text-white">Bahagia Bersama Cafe</span>
+          </h1>
+          <a
+            className="mb-2 inline-block rounded bg-primary px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] md:mr-2 md:mb-0"
+
             data-te-ripple-init=""
             data-te-ripple-color="light"
             href="#!"
             role="button"
           >
-            Learn more
+
+            Our Menu
           </a>
         </div>
         {/* Jumbotron */}
@@ -150,6 +163,9 @@ export default function LandingPage() {
       </section>
       <section className="mb-32 text-center">
         <h2 className="font-poppins text-amber-200 mb-12 pb-4 text-center text-3xl font-bold">Menu Andalan</h2>
+        <h2 className="mb-12 pb-4 text-center text-3xl font-bold">
+          BEST SELLER
+        </h2>
         <div className="grid gap-6 lg:grid-cols-3 xl:gap-x-12 ">
           {dataList.map((item, index) => (
             <div key={index} className="mb-6 lg:mb-0">
@@ -157,6 +173,16 @@ export default function LandingPage() {
                 <div className="flex">
                   <div className="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20" data-te-ripple-init="" data-te-ripple-color="light">
                     <img src={`https://api.gudang-morina.my.id/storage/${item.item_image}`} className="w-[500px] h-[350px]" alt="Item Image" />
+]                  <div
+                    className="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
+                    data-te-ripple-init=""
+                    data-te-ripple-color="light"
+                  >
+                    <img
+                      src={`https://api.gudang-morina.my.id/storage/${item.item_image}`}
+                      className="w-[500px] h-[350px]"
+                      alt="Item Image"
+                    />
                     <a href="#!">
                       <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
                     </a>
@@ -341,7 +367,7 @@ export default function LandingPage() {
           <div className="w-full bg-black/5 p-4 text-center">
             <a className="font-semibold" href="https://tw-elements.com/">
               Bahber Cafe
-            </a>
+                         </a>
           </div>
         </footer>
       </>
