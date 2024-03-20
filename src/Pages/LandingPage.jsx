@@ -52,17 +52,9 @@ export default function LandingPage() {
                 </span>
               </button>
               {/* Navbar brand */}
-              <a className="text-primary dark:text-primary-400" href="#!">
-                <span className="[&>svg]:ml-2 [&>svg]:mr-3 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:lg:ml-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                    />
-                  </svg>
-                </span>
-              </a>
+              <h3 className="font-poppins text-primary dark:text-red-600" href="#!">
+                <span className="[&>svg]:ml-2 [&>svg]:mr-3 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:lg:ml-0">Bahagia Bersama</span>
+              </h3>
             </div>
             {/* Collapsible wrapper */}
             <div className="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto" id="navbarSupportedContentY" data-te-collapse-item="">
@@ -114,10 +106,10 @@ export default function LandingPage() {
         </nav>
         {/* Navbar */}
         {/* Jumbotron */}
-        <div className=" py-24 px-6 text-center dark:bg-neutral-900 h-[900px]" style={{ backgroundImage: `url(${bg})` }}>
-          <h1 className="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+        <div className=" py-24 px-6 text-center dark:bg-neutral-900 h-[900px]" style={{ backgroundImage: `url(https://api.gudang-morina.my.id/storage/menu-images/bahber_bg.png)`, backgroundRepeat: "no-repeat", backgroundSize: "100%" }}>
+          <h1 className="mt-2 mb-16 text-5xl text-green-900 font-bold tracking-tight md:text-6xl xl:text-7xl">
             Bahagia Bersama Cafe <br />
-            <span className="text-primary">Semua Bisa Bahagia</span>
+            <span className="text-yellow-700">Semua Bisa Bahagia</span>
           </h1>
 
           <a
@@ -137,18 +129,14 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[5rem] items-center pl-[200px]">
             <div className="video-right justify-center items-center relative flex">
               <div className="overlay overlay-bg absolute inset-0 bg-black opacity-50 rounded-lg" />
-              <div className="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden rounded-lg shadow-lg" style={{ paddingTop: "56.25%" }}>
-                <iframe
-                  className="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full"
-                  src="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&origin=https%3A%2F%2Fmdbootstrap.com"
-                  allowFullScreen=""
-                  data-gtm-yt-inspected-2340190_699="true"
-                  id={240632615}
-                />
+              <div className="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden rounded-lg shadow-lg">
+                <img src="https://api.gudang-morina.my.id/storage/menu-images/asset_bahber.png" alt="" />
               </div>
             </div>
             <div className="video-left">
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">Tentang Kami</h1>
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 text-green-900">
+                <span className="text-red-500">Tentang</span> Kami
+              </h1>
 
               <p className="mb-8">
                 Dekorasi dan juga warna menggunakan konsep retro & vintage. Penggunaan material alami seperti kayu dan batu menciptakan suasana yang hangat dan nyaman, kemudian memanfaatkan barang - barang bekas yang dapat di daur ulang
@@ -161,7 +149,7 @@ export default function LandingPage() {
         </div>
       </section>
       <section className="mb-32 text-center">
-        <h2 className="mb-12 pb-4 text-center text-3xl font-bold">Menu Andalan Kami</h2>
+        <h2 className="font-poppins text-amber-200 mb-12 pb-4 text-center text-3xl font-bold">Menu Andalan</h2>
         <div className="grid gap-6 lg:grid-cols-3 xl:gap-x-12 ">
           {dataList.map((item, index) => (
             <div key={index} className="mb-6 lg:mb-0">
@@ -186,7 +174,7 @@ export default function LandingPage() {
       </section>
 
       <>
-        <footer className="flex flex-col items-center text-center text-surface dark:bg-neutral-700 dark:text-white" style={{ backgroundImage: `url(${footer})` }}>
+        <footer className="flex flex-col items-center text-center text-surface  text-neutral-50" style={{ backgroundImage: `url(${footer})` }}>
           <div className="container px-6 pt-6">
             {/* Social media icons container */}
             <div className="mb-6 flex justify-center space-x-2">
@@ -197,12 +185,7 @@ export default function LandingPage() {
                 data-twe-ripple-init=""
                 data-twe-ripple-color="light"
               >
-                <span className="[&>svg]:h-5 [&>svg]:w-5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
-                    {/*!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. */}
-                    <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-                  </svg>
-                </span>
+                <span className="[&>svg]:h-5 [&>svg]:w-5"></span>
               </a>
               <a
                 href="#!"
@@ -315,15 +298,15 @@ export default function LandingPage() {
             </div>
             {/* Copyright information */}
             <div className="mb-6">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam sequi voluptate quas.</p>
+              <p>Info Kita</p>
             </div>
             {/* Links section */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 text-red-50">
               <div className="mb-6">
-                <h5 className="mb-2.5 font-bold uppercase">Links</h5>
+                <h5 className="mb-2.5 font-bold uppercase">Lokasi</h5>
                 <ul className="mb-0 list-none">
                   <li>
-                    <a href="#!">Link 1</a>
+                    <a href="#!">Manahan</a>
                   </li>
                   <li>
                     <a href="#!">Link 2</a>
@@ -357,7 +340,7 @@ export default function LandingPage() {
           {/* Copyright section */}
           <div className="w-full bg-black/5 p-4 text-center">
             <a className="font-semibold" href="https://tw-elements.com/">
-              TW Elements
+              Bahber Cafe
             </a>
           </div>
         </footer>
