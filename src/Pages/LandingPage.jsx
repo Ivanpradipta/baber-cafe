@@ -234,7 +234,7 @@ export default function LandingPage() {
                     data-te-ripple-color="light"
                   >
                     <img
-                      src={`http://127.0.0.1:8000/storage/${item.item_image}`}
+                      src={item.item_image}
                       className="w-[500px] h-[350px]"
                       alt="Item Image"
                     />
